@@ -24,7 +24,7 @@ function Projects() {
     <h2>Projects</h2>
     <Container>
       <Row>
-      <Col xs={12} sm={12} md={12} lg={6} data-aos="fade-up">
+      <Col xs={12} sm={12} md={12} lg={6} data-aos="flip-left">
       <ProjectCard
         border="primary"
         imgSrc={todoImg}
@@ -37,7 +37,7 @@ function Projects() {
       </Col>
       <br />
 
-      <Col xs={12} sm={12} md={12} lg={6} data-aos="fade-up">
+      <Col xs={12} sm={12} md={12} lg={6} data-aos="flip-right">
       <ProjectCard
         border="secondary"
         imgSrc={loginImg}
@@ -49,7 +49,7 @@ function Projects() {
       </Col>
       <br />
 
-      <Col xs={12} sm={12} md={12} lg={6} data-aos="fade-up">
+      <Col xs={12} sm={12} md={12} lg={6} data-aos="flip-up">
       <ProjectCard
         border="success"
         imgSrc={portfolioImg}
@@ -60,17 +60,17 @@ function Projects() {
       </Col>
       <br />
 
-      <Col xs={12} sm={12} md={12} lg={6} data-aos="fade-up">
+      <Col xs={12} sm={12} md={12} lg={6} data-aos="flip-down">
       <ProjectCard
         border="light"
         imgSrc={BookstoreImg}
         header="BookStore"
         // title="Light Card Title"
-        text="An online bookstore is a digital platform where users can browse, purchase, and sometimes read books via the internet.A comprehensive collection of books, categorized by genre, author, popularity, and other criteria.Various payment methods including credit/debit cards, PayPal, and other online payment systems."
+        text="An online bookstore is a digital platform where users can browse, purchase, and sometimes read books via the internet.A comprehensive collection of books, categorized by genre, author, popularity, and other criteria."
       />
       </Col>
      
-      <Col xs={12} sm={12} md={12} lg={6} data-aos="fade-up">
+      <Col xs={12} sm={12} md={12} lg={6} data-aos="flip-down">
       <ProjectCard
         border="light"
         imgSrc={keeperImg}

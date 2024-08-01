@@ -20,8 +20,13 @@ body {
   /* background-color: #121212 !important; */
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  
 }
 
+.App{
+  position:relative;
+  overflow: hidden;
+}
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -259,13 +264,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
   display: block;
   color: #000;
 }
-.banner p {
+ /* .banner p {
   color: #100f0f;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+}  */
+/* .banner p {
+  position: relative;
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  letter-spacing: 7px!important;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+    width: 100%;
+    display: inline-block;
 }
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300%;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+} */
+
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -536,13 +573,13 @@ img{
 }
 
 .footer h2 { 
-  color: #1067c4;
+  color: #09090a;
   /* letter-spacing: 0.5px;
   margin-top: 20px;
   text-align: left; */
 } 
 .footer h5{
-  color: #3e0dcf;
+  color: #0f0f10;
 }
 
 .social-icon-1 {
@@ -577,4 +614,24 @@ transition: 0.3s ease-in-out;
   .footer .text-right {
     text-align: right !important;
   }
+} 
+.cursor{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(252, 247, 247);
+  border-radius: 50%;
+  border: 2px solid black;
+  position: fixed;
+  pointer-events: none; 
+  transition: transform 0.1s ease-out, background-color 0.3s;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  
+}
+
+.cursor:hover {
+  width: 30px; /* Size on hover */
+  height: 30px;
+  background-color: blue; 
+  transform: translate(-50%, -50%) scale(1.5);
 } 
